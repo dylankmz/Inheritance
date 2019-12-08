@@ -10,8 +10,9 @@ public class Student extends Persoon {
         this.specialisatie = specialisatie;
     }
 
+
     @Override
     public String toString() {
-        return "Student{" + "specialisatie='" + specialisatie + '\'' + '}';
+        return "[Student " + getId() + " : " + getNaam() + " , " + specialisatie + "]";
     }
 }

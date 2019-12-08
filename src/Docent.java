@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+
 public class Docent extends Persoon {
 
     private String specialisatie;
@@ -22,8 +23,19 @@ public class Docent extends Persoon {
         this.specialisatie = specialisatie;
     }
 
+    public String[] getStudentNamesOnly() {
+        String[] names = new String[studenten.length];
+
+        for (int i = 0; i < studenten.length; i++) {
+            names[i] = studenten[i].getNaam();
+        }
+        return names;
+    }
+
     @Override
     public String toString() {
-        return "Docent{" + "specialisatie='" + specialisatie + '\'' + ", studenten=" + Arrays.toString(studenten) + '}';
+
+
+        return "[Docent " + getId() + " : " + getNaam() + " , specialisatie: " + specialisatie + " , (studenten: " + Arrays.toString(getStudentNamesOnly());
     }
 }

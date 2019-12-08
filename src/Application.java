@@ -63,7 +63,7 @@ public class Application {
         Student s1 = new Student();
         Student s2 = new Student();
         Student s3 = new Student();
-        Student s4 = new Student();
+
         Docent d1 = new Docent();
 
         //ik geef naam en specialisatie aan de Docent
@@ -74,15 +74,17 @@ public class Application {
         s1.setSpecialisatie("Muziek");
         s1.setNaam("Mahou Diabete");
         s2.setSpecialisatie("Muziek");
-        s2.setNaam("Mahou Diabete");
-        s3.setSpecialisatie("Muziek");
-        s3.setNaam("Mahou Diabete");
-        s4.setSpecialisatie("Muziek");
-        s4.setNaam("Mahou Diabete");
+        s2.setNaam("Julie Kwikis");
+        s3.setSpecialisatie("Electronica");
+        s3.setNaam("Oliver Sandhal");
+
+        System.out.println(s1.toString());
+        System.out.println(s2.toString());
+        System.out.println(s3.toString());
 
 
         //ik voeg de studenten in de array van de Docent
-        d1.setStudenten(new Student[] {s1, s2, s3, s4});
+        d1.setStudenten(new Student[]{s1, s2, s3});
 
         //ik roep de to string methode van de class Docent
         System.out.println(d1.toString());
