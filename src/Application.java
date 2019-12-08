@@ -57,6 +57,37 @@ public class Application {
         p2.getAdres().setLand("Mali");
         System.out.println(p2);
 
+        //OEF 4
+
+        //ik maak vier studenten en een Docent
+        Student s1 = new Student();
+        Student s2 = new Student();
+        Student s3 = new Student();
+        Student s4 = new Student();
+        Docent d1 = new Docent();
+
+        //ik geef naam en specialisatie aan de Docent
+        d1.setNaam("Frans Langz");
+        d1.setSpecialisatie("Muziek");
+
+        //ik geef naam en specialisatie aan de Studenten
+        s1.setSpecialisatie("Muziek");
+        s1.setNaam("Mahou Diabete");
+        s2.setSpecialisatie("Muziek");
+        s2.setNaam("Mahou Diabete");
+        s3.setSpecialisatie("Muziek");
+        s3.setNaam("Mahou Diabete");
+        s4.setSpecialisatie("Muziek");
+        s4.setNaam("Mahou Diabete");
+
+
+        //ik voeg de studenten in de array van de Docent
+        d1.setStudenten(new Student[] {s1, s2, s3, s4});
+
+        //ik roep de to string methode van de class Docent
+        System.out.println(d1.toString());
+
+
     }
 }
 
